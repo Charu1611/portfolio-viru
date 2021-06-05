@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.navbar{
+    background-color:#e94560 !important;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.nav-link{
+    color:#fff !important;
+}
+.blue-bg{
+    background-color: #2d4059;
+}
+.typewriter p {
+    overflow: hidden;  border-right: .15em solid #e94560; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #e94560 }
+  }
+
+  .grey-bg{
+      background-color: #e5e5e5;
+  }
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+      background-color: #2d4059 !important;
+  }
+  .nav-pills .nav-link{
+      background-color: #e94560 !important;
+  }
+  .social-icon{
+      transition: 500ms;
+  }
+  .social-icon:hover{
+      color: #e94560 !important;
+      transform: scale(0.9);
+  }
+  .header {
+    font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
+    fill: #2f80ed;
+    animation: fadeInAnimation 0.8s ease-in-out forwards;
+}
+
+.lang-name {
+    font: 400 11px 'Segoe UI', Ubuntu, Sans-Serif;
+    fill: #333
+}
+
+
+
+/* Animations */
+@keyframes scaleInAnimation {
+    from {
+        transform: translate(-5px, 5px) scale(0);
+    }
+
+    to {
+        transform: translate(-5px, 5px) scale(1);
+    }
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+* {
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
+}
