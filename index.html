@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/logovc.png" type="image/png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Portfolio hai pta nhi kya?</title>
 </head>
 
@@ -343,16 +344,18 @@
                 <div class="row mt-5">
                     <div class="col-md-6 col-lg-6 col-12">
                         <input type="text" class="p-3 form-control shadow-none" id="name_form"
-                            placeholder="if(true) { Enter your name }" style="border: 0 !important;border-radius: 10px;">
+                            placeholder="if(true) { Enter your name }"
+                            style="border: 0 !important;border-radius: 10px;">
                     </div>
                     <div class="col-md-6 col-lg-6 col-12">
                         <input type="email" class="p-3 form-control shadow-none" id="email_form"
-                            placeholder="if(true) { Enter your email }" style="border: 0 !important;border-radius: 10px;">
+                            placeholder="if(true) { Enter your email }"
+                            style="border: 0 !important;border-radius: 10px;">
                     </div>
                     <div class="col-12 my-4">
                         <textarea class="form-control p-3 shadow-none" id="message_form"
-                            placeholder="if(true) { Enter your message or any suggestion for the website }"
-                            rows="5" style="border: 0 !important;border-radius: 10px;"></textarea>
+                            placeholder="if(true) { Enter your message or any suggestion for the website }" rows="5"
+                            style="border: 0 !important;border-radius: 10px;"></textarea>
                     </div>
                     <div class="d-flex justify-content-end">
                         <button type="button" class="btn btn-primary shadow-none px-4">.send( )</button>
@@ -387,6 +390,52 @@
             </div>
         </div>
     </section>
+    <section class="blue-bg py-5">
+        <div class="container">
+            <h2><strong style="color:#fff">.play(<span style="color:#e94560;">typing_game</span>)</strong></h2>
+            <p class="text-center text-muted mt-3">“You can't cheat the game. You can't cheat the grind. You get out
+                what you put in at the end of the day.”</p>
+            <div class="card p-3" style="border-radius: 10px;">
+                <div class="card-body">
+                    <p class="text-end" style="cursor: pointer;"><a data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left"  data-bs-content="Type each word in the given amount to score. To play again just type the current word. your score will reset" style="text-decoration: none; color: #e94560;"><i class="fa fa-eye"></i> Instructions</a></p>
+                    <div class="row">
+                        <div class="col">
+                            <p class="lead text-center">Type the given word within in
+                                <span style="color: #1f0cfc;" id="seconds">5 Seconds:</span>
+                            </p>
+                            <h2 class="display-4 text-center py-3" id="current-word"
+                                style="color: #e94560; font-family: 'Redressed';">Hello</h2>
+                            <div class="d-flex justify-content-center">
+                                <input type="text" class="form-control form-control-lg shadow-none py-3 text-center"
+                                placeholder="if(want_to_play is true){ start_typing() }" id="word-input"
+                                style="font-family: 'Roboto';border-radius: 10px;width: 90%;">
+                            </div>
+                             
+                            <div class="row mt-4">
+                                <div class="col-6 text-start">
+                                    <h3 style="font-family: 'Raleway';">.time_left( 
+                                        <span id="time" style="color: #e94560;">0</span><span style="color: #e94560;">s</span> )
+                                    </h3>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <h3 style="font-family: 'Raleway';">.total_score( 
+                                        <span id="score" style="color: #e94560;">0</span><span style="color: #e94560;"></span> )
+                                    </h3>
+                                    
+                                </div>
+                            </div>
+                            <div class="text-center my-3">
+                                <span class="mt-3 p-3" id="message" style="border-radius: 10px;font-size: 1.2rem;font-weight: bold;"></span>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <footer style="background-color: #e94560;" class="py-5">
         <div class="container">
@@ -428,9 +477,9 @@
     </footer>
 
     <section class="blue-bg text-center py-2">
-        <p class="text-white m-0 footer-para">Made with <i class="fa fa-heart" style="color: red;"></i> by <a
-              href="#"  class="footer-name" style="color: #e94560 !important">Charu Bansal</a> and <a class="footer-name"
-              href="#"  style="color: #e94560 !important">Vibhanshu Garg</a> </p>
+        <p class="text-white m-0 footer-para">Made with <i class="fa fa-heart" style="color: red;"></i> by <a href="#"
+                class="footer-name" style="color: #e94560 !important">Charu Bansal</a> and <a class="footer-name"
+                href="#" style="color: #e94560 !important">Vibhanshu Garg</a> </p>
     </section>
 
 
@@ -441,7 +490,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
         </script>
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
