@@ -282,3 +282,16 @@ textarea {
     right: auto;
   }
 }
+.btn-success{
+    background-color: #2d4059 !important;
+    border: 0 !important;
+}
+.btn-outline-success{
+    border-color: #e94560;
+    color: #e94560;
+}
+.btn-outline-success:hover{
+    background-color: #e94560;
+    color: #fff;
+    border: 0 !important;
+}
