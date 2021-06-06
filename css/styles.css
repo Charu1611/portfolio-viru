@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Roboto&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -142,4 +142,7 @@ textarea {
 .footer-name:hover{
     font-size: 16.5px;
     font-weight: bold;
+}
+.form-control:focus{
+  border-color: #c4c4c4 !important;
 }
