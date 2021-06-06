@@ -101,3 +101,20 @@ body{
             transform: scale(1.1);
             margin-left: 7px;
 }
+::placeholder {
+    color: grey !important;
+    opacity: 1 !important;
+  }
+  
+  
+  ::-ms-input-placeholder { 
+   color:grey !important;
+  }
+
+  textarea{
+      resize: none;
+  }
+  /* .btn:focus, .btn:active { 
+      outline: none !important; 
+      box-shadow: none;
+    } */
