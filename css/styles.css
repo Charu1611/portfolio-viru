@@ -118,3 +118,13 @@ body{
       outline: none !important; 
       box-shadow: none;
     } */
+
+    .footer_list{
+        transition: 500ms;
+        cursor: pointer;
+    }
+    .footer_list:hover{
+        margin-left: 2px;
+        color: #2d4059 !important;
+    }
+  
